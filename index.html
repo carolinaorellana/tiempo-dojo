@@ -18,9 +18,9 @@
         <nav>
             <h1>DojoWeather</h1>
             <ul>
-                <li>Burbank</li>
-                <li>Chicago</li>
-                <li>Dallas</li>
+                <li onclick="alertaTiempo()">Burbank</li>
+                <li onclick="alertaTiempo()">Chicago</li>
+                <li onclick="alertaTiempo()">Dallas</li>
             </ul>
         </nav>
 
@@ -31,9 +31,9 @@
                 </div>
                 <div class="temperatura">
                     <label> Show temperature in</label>
-                    <select>
-                        <option>°C</option>
-                        <option>°F</option>
+                    <select id="listaGrados" onchange="valorSelector()">
+                        <option value="1">°C</option>
+                        <option value="2">°F</option>
                     </select>
                 </div>
             </header>
@@ -43,8 +43,8 @@
                     <img src="assets/img/some_rain.png" alt="ilustracion de lluvia">
                     <h4>some rain</h4>
                     <div class="grados">
-                        <h5 class="max">24°</h5>
-                        <h5 class="min">18°</h5>
+                        <h5 class="max"><span>24</span>°</h5>
+                        <h5 class="min"><span>18</span>°</h5>
                     </div>
                 </div>
                 <div class="tarjeta">
@@ -52,8 +52,8 @@
                     <img src="assets/img/some_sun.png" alt="ilustracion soleada">
                     <h4>some sun</h4>
                     <div class="grados">
-                        <h5 class="max">27°</h5>
-                        <h5 class="min">19°</h5>
+                        <h5 class="max"><span>27</span>°</h5>
+                        <h5 class="min"><span>19</span>°</h5>
                     </div>
                 </div>
                 <div class="tarjeta">
@@ -61,8 +61,8 @@
                     <img src="assets/img/some_clouds.png" alt="ilustracion de nubes">
                     <h4>some clouds</h4>
                     <div class="grados">
-                        <h5 class="max">21°</h5>
-                        <h5 class="min">16°</h5>
+                        <h5 class="max"><span>21</span>°</h5>
+                        <h5 class="min"><span>16</span>°</h5>
                     </div>
                 </div>
                 <div class="tarjeta">
@@ -70,13 +70,20 @@
                     <img src="assets/img/some_sun.png" alt="ilustracion soleada">
                     <h4>some sun</h4>
                     <div class="grados">
-                        <h5 class="max">26°</h5>
-                        <h5 class="min">21°</h5>
+                        <h5 class="max"><span>26</span>°</h5>
+                        <h5 class="min"><span>21</span>°</h5>
                     </div>
                 </div>
             </section>
+            <div class="cookie">
+                <img src="assets/img/cookie.png" alt="ilustracion de una galleta">
+                <div class="infoCookie">
+                    <h3>Stop! Cookie time</h3>
+                    <p> We used cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+                <button onclick="cerrarCookies()"> I Accept </button>
+            </div>
         </main>
-
-        <script src="assets/js/"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

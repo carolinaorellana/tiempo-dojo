@@ -96,3 +96,53 @@ section{
 .min{
     color: #2B78E4;
 }
+/*Mensaje de coockie*/
+.cookie{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    left:10%;
+    background-color: #EEEEEE;
+    border: solid 2px #9FC5F8;
+    border-radius: 20px;
+    box-shadow: 0px 4px 18px #2B78E4;
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cookie img{
+    flex: 1;
+    margin-inline: 2rem;
+}
+.cookie .infoCookie{
+    flex: 12;
+}
+.infoCookie h3{
+    font-size: 2rem;
+}
+.infoCookie p{
+    font-size: 1.2rem;
+}
+.infoCookie p a{
+    font-size: 1.2rem;
+    color: #2B78E4;
+}
+.infoCookie p a:hover{
+    font-weight: bold;
+}
+.cookie button{
+    flex: 2;
+    padding: 0.5rem;
+    background-color: #2B78E4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-inline: 2rem ;
+}
+.cookie button:hover{
+    font-weight: 700;
+    box-shadow: 2px 2px 4px #2B78E4;
+}
